@@ -84,7 +84,7 @@ const languages = {
       soft_: "Teamwork<br/>Resilience<br/>Will to learn",
       misc: "Miscellaneous",
       misc_: "Markdown and LaTeX<br/>git version control system<br/>Office Pack and similar",
-      last: "Did you enjoy what you see?",
+      last: "Enjoy what you see?",
       last_: "Contact me!",
     }
 }
