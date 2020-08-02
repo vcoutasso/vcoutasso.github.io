@@ -8,8 +8,9 @@
 */
 
 #btn-change-lang{
-  width: 30px;
+  width: 50px;
   cursor: pointer; 
+  padding: 10px;
 }
 .img-flag{
   display: none;

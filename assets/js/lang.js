@@ -65,7 +65,7 @@ const languages = {
       who: "Who am I",
       who_: "",
       about1: 'Born and raised in Curitiba, I\'m an Electronic Engineering student at <a href="http://portal.utfpr.edu.br/">UTFPR</a>. Currently I\'m a 2nd-year grad student holding a scholarship from CNPq for research purposes in Computational Intelligence.',
-      about2: "Fascinated by technology ever since I was a child, I discovered my passion for electronics and programming at the age of 14. Be it for embedded systems, high-performance software, or other different applications, if programming is involved, I'm all for it.",
+      about2: "Fascinated by technology ever since I was a child, I discovered my passion for electronics and programming at the age of 14. Be it for embedded systems, high-performance software, or something that's new to me, if programming is involved, I'm all for it.",
       interests: 'My areas of interest',
       interests_: "",
       interests1: "Programming is my passion, and I am always looking to learn and practice, be it by reading a new book or working on personal projects.",
