@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Portfólio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="apple-touch-icon" sizes="57x57" href="assets/icons/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="assets/icons/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="assets/icons/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="assets/icons/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="assets/icons/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="assets/icons/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="assets/icons/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="assets/icons/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="assets/icons/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="assets/icons/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
+		<link rel="manifest" href="assets/icons/manifest.json">
+		<link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="assets/icons/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header">
+					<h1 id="logo"><a href="index.html">vcoutasso</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="portfolio.html">Portfólio</a></li>
+							<li><a target="_blank" rel="noopener noreferrer" href="assets/docs/cv.pdf" class="button primary">Curriculum Vitae</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Portfolio -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Portfólio</h2>
+							<p>Uma breve apresentação de alguns dos meus projetos mais notáveis</p>
+						</header>
+
+						<!-- ChessQDL -->
+							<section id="chessqdl">
+								<img src="assets/images/chess.png" alt="" style="display:block;margin-left:auto;margin-right:auto">
+								<h3><i>Engine</i> de Xadrez</h3>
+								<p>
+									A proposta deste projeto é tão simples quanto ambiciosa: criar uma engine de xadrez
+									utilizando técnicas bem estabelecidas e de alto desempenho.
+									Portanto, escolhi a representação do tabuleiro por <i>bitboards</i>, de forma que cada 
+									estado do tabuleiro é representado por números inteiros de 64 bits,
+									onde cada bit indica uma posição do tabuleiro. 
+								</p>
+								<p>
+									O projeto foi criado visando fornecer uma interface por linha de comando, por meio da qual
+									o usuário pode jogar contra a máquina (que utiliza o algoritmo minimax).
+									Dado seu tamanho e complexidade, este é o único aqui apresentado
+									que ainda não foi dado como concluído.
+								</p>
+								<h4>Ferramentas utilizadas:</h4>
+								<ul>
+									<li>Linguagem C++</li>
+									<li>CMake</li>
+									<li>TravisCI</li>
+									<li>Doxygen (documentação)</li>
+									<li>Google Test (<i>unit tests</i>)</li>
+								</ul>
+								<ul class="actions special">
+									<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/vcoutasso/Chessqdl" class="button">Veja no GitHub</a></li>
+								</ul>
+							</section>
+							<hr />
+
+						<!-- Amia -->
+							<section id="amia">
+								<img src="assets/images/caramelo.png" alt="" style="display:block;margin-left:auto;margin-right:auto">
+								<h3>Jogo de plataforma</h3>
+								<p>
+									Um dos primeiros projetos desenvolvidos na faculdade, o Amia::Mond é um simples jogo multijogador de plataforma
+									onde o objetivo é desviar dos obstáculos e chegar mais longe que os adversários.
+								</p>
+								<p>
+									O projeto foi uma excelente oportunidade de colocar em prática o paradigma de programação orientada à objeto,
+									que havia sido recentemente introduzida no curso de graduação.
+								</p>
+								<h4>Ferramentas utilizadas:</h4>
+								<ul>
+									<li>Linguagem C++</li>
+									<li>Makefile</li>
+									<li>SFML</li>
+								</ul>
+								<ul class="actions special">
+									<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/vcoutasso/AmiaMond" class="button">Veja no GitHub</a></li>
+								</ul>
+							</section>
+							<hr />
+
+						<!-- Brainfuck -->
+							<section id="brainfuck">
+								<img src="assets/images/mandelbrot.png" alt="" style="display:block;margin-left:auto;margin-right:auto;scale:80%">
+								<h3>Interpretador de <i>brainfuck</i></h3>
+								<p>
+									Brainfuck é uma linguagem de programação esotérica com um nome bastante peculiar.
+									Composta em sua totalidade por apenas 8 instruções distintas, a linguagem é uma poderosa ferramenta
+									devido ao fato de ser <i>Turing complete</i>, apesar de sua simplicidade.
+								</p>
+								<p>
+									A proposta deste projeto foi criar um interpretador para arquivos de texto com programas válidos na linguagem.
+									O objetivo final era obter um interpretador robusto e simples, mas eficiente o suficiente para 
+									uma vasta gama de aplicações.
+								</p>
+								<h4>Ferramentas utilizadas:</h4>
+								<ul>
+									<li>Linguagem Rust</li>
+									<li>Cargo</li>
+								</ul>
+								<ul class="actions special">
+									<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/vcoutasso/bfi-rs" class="button">Veja no GitHub</a></li>
+								</ul>
+							</section>
+							<hr />
+
+						<!-- CHIP8 -->
+							<section id="chip8">
+								<img src="assets/images/invaders.png" alt="" style="display:block;margin-left:auto;margin-right:auto">
+								<h3>Emulador de CHIP-8</h3>
+								<p>
+									Segundo e mais recente projeto desenvolvido utilizando a linguagem Rust, o projeto faz exatamente 
+									o que seu nome sugere: emula um dispositivo de <i>hardware</i> capaz de interpretar a linguagem CHIP-8.
+								</p>
+								<p>
+									O principal recurso que viabilizou esse trabalho foi esta
+									<a href="http://devernay.free.fr/hacks/chip8/C8TECH10.HTM">referência técnica</a>.
+									Todos os aspectos do dispositivo (áudio, vídeo, entrada, etc.) foram devidamente implementados, resultando em um
+									produto final capaz de interpretar arquivos ROM destinados aos dispositivos originais.
+								</p>
+								<h4>Ferramentas utilizadas:</h4>
+								<ul>
+									<li>Linguagem Rust</li>
+									<li>Cargo</li>
+								</ul>
+								<ul class="actions special">
+									<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/vcoutasso/chip8-rs" class="button">Veja no GitHub</a></li>
+								</ul>
+							</section>
+							<hr />
+
+						<!-- Spider -->
+							<section id="chip8">
+								<img src="assets/images/spider.png" alt="" style="display:block;margin-left:auto;margin-right:auto;scale:70%">
+								<h3>Paciência Spider</h3>
+								<p>
+									Um dos primeiros projetos desenvolvidos com a linguagem Python (versão 3), este trabalho objetivou
+									a implementação do clássico e saudoso paciência spider. Para o projeto, escolheu-se criar uma interface
+									de linha de comando prática e intuitiva.
+								</p>
+								<p>
+									O projeto simula a experiência do jogo desenvolvido pela Microsoft, distribuído no Windows XP.
+								</p>
+								<h4>Ferramentas utilizadas:</h4>
+								<ul>
+									<li>Linguagem Python</li>
+									<li>Biblioteca curses</li>
+								</ul>
+								<ul class="actions special">
+									<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/vcoutasso/Terminal-Spider" class="button">Veja no GitHub</a></li>
+								</ul>
+							</section>
+							<hr />
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://twitter.com/vcoutasso" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://www.linkedin.com/in/vcoutasso/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/vcoutasso/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="mailto:vinicouto12@gmail.com" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Vinícius Couto Tasso. Todos os direitos reservados. </li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/lang.js"></script>
+
+	</body>
+</html>

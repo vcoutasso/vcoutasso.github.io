@@ -30,8 +30,8 @@ const languages = {
     {
       desc: "21 anos. Técnico em eletrônica e futuro engenheiro.<br> Pesquisador, programador e fã de gatos nas horas vagas.",
       who: "Quem sou eu",
-      who_: "A história de um jovem curitibano",
-      about1: 'Nascido e criado na capital do Paraná, sou um estudante de Engenharia Eletrônica na <a href="http://portal.utfpr.edu.br/">UTFPR</a>. Cursando o 4º período da faculdade, atualmente sou bolsista de Iniciação Científica pelo CNPq com foco em Inteligência Computacional. ',
+      who_: "Sobre um jovem curitibano",
+      about1: 'Nascido e criado na capital do Paraná, sou um estudante de Engenharia Eletrônica na <a href="http://portal.utfpr.edu.br/">UTFPR</a>. Cursando o 4º período da faculdade, atualmente sou bolsista de Iniciação Científica com foco em Inteligência Computacional. ',
       about2: "Fascinado por tecnologia desde cedo, descobri minha paixão por eletrônica e programação aos 14 anos. Seja para sistemas embarcados, softwares de alto desempenho ou outras aplicações diferentes, se há programação envolvida, eu tenho interesse. ",
       skills: "Habilidades",
       skills_: "Um cinto de ferramentas que não para de crescer",
@@ -54,7 +54,7 @@ const languages = {
       desc: "21 years. Electronics technician and future engineer.<br> Researcher, programmer and cat lover in my spare time.</p> ",
       who: "Who am I",
       who_: "",
-      about1: 'Born and raised in Curitiba, I\'m an Electronic Engineering student at <a href="http://portal.utfpr.edu.br/">UTFPR</a>. Currently I\'m a 2nd-year grad student holding a scholarship from CNPq for research purposes in Computational Intelligence.',
+      about1: 'Born and raised in Curitiba, I\'m an Electronic Engineering student at <a href="http://portal.utfpr.edu.br/">UTFPR</a>. Currently I\'m a 2nd-year grad student holding a scholarship for research purposes in Computational Intelligence.',
       about2: "Fascinated by technology ever since I was a child, I discovered my passion for electronics and programming at the age of 14. Be it for embedded systems, high-performance software, or something that's new to me, if programming is involved, I'm all for it.",
       skills: "Skills",
       skills_: "",
@@ -102,10 +102,14 @@ const changeButton = () =>{
   flagUs.classList.toggle('active');
 }
 
-button.addEventListener('click', () =>{
-  lang = lang === 'pt' ? 'en' : 'pt';
-  showLang(lang);
-  changeButton();
-});
+try {
+  button.addEventListener('click', () =>{
+    lang = lang === 'pt' ? 'en' : 'pt';
+    showLang(lang);
+    changeButton();
+  });
 
-showLang(lang);
+  showLang(lang);
+}
+catch(err) {
+}
